@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="pos_subscriber_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+<!-- ClientListScreenWidget for Customer Type column
+<t t-extend="ClientListScreenWidget" t-inherit="point_of_sale.ClientListScreen" t-inherit-mode="extension" owl="1">
+<xpath expr="//table//thead//tr" position="inside">
+<th>Type</th>
+</xpath>
+</t>
+
+<!- Getting value for Customer Type colun
+<t t-extend="ClientLine" t-inherit="point_of_sale.ClientLine" t-inherit-mode="extension" owl="1">
+<xpath expr="//tr" position="inside">
+<td class="text-center">
+<center><t t-esc='props.partner.customerid ""' /></center>
+</td>
+</xpath>
+</t>
+
+<!- Customer Type column at Client Detials Edit
+<t t-extend="ClientDetailsEdit" t-inherit="point_of_sale.PartnerDetailsEdit" t-inherit-mode="extension" owl="1">
+<xpath expr="//div[@('client-details-left')]" position="inside">
+<div class="client-detail">
+<span class='label'>Customer Type</span>
+<span> <t t-esc='props.partner.customerid'/></span>
+</div>
+</xpath>
+</t>
+
+<!- Customer Type column at Client Detials Edit -->
+
+</templates>
