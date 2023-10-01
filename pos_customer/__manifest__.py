@@ -15,7 +15,7 @@
         'point_of_sale.assets': [
         "pos_customer/static/src/js/pos.js",
         "pos_customer/static/src/xml/cleint_pos.xml",
-
+        "pos_customer/static/src/xml/partneredit.xml",
 
         ],
     },
