@@ -13,7 +13,6 @@ odoo.define('pos_customer.pos', function (require) {
             
             const partner = this.props.partner;
             this.changes = useState({
-                genders: partner.gender_id || "",
                 gender: partner.gender || "",
                 customerid: partner.customerid || "",
 

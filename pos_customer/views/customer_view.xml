@@ -9,7 +9,6 @@
                 <xpath expr="//field[@name='vat']" position="after">
                     <field name="customerid"/>
                     <field name="gender"/>
-                    <field name="gender_id" options="{'no_edit': True, 'no_create': True, 'no_open': True}"/>
                 </xpath>
             </field>
         </record>

@@ -9,16 +9,15 @@
     'license': 'LGPL-3',
     'demo': [],
     'data': [
-        'security/ir.model.access.csv',
-        'data/partner_gender.xml',
-        'views/customer_view.xml',
+      'views/customer_view.xml',
     ],
     'assets': {
         'point_of_sale.assets': [
-            "pos_customer/static/src/js/pos.js",
-            "pos_customer/static/src/js/load_fields.js",
-            "pos_customer/static/src/xml/cleint_pos.xml",
-            "pos_customer/static/src/xml/Partneredit.xml",
+        "pos_customer/static/src/js/pos.js",
+        "pos_customer/static/src/js/load_fields.js",
+        "pos_customer/static/src/xml/cleint_pos.xml",
+        "pos_customer/static/src/xml/Partneredit.xml",
+
         ],
     },
     'application': True,
