@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record forcecreate="True" id="gender_male" model="partner.gender">
+            <field name="name">Male</field>
+        </record>
+        <record forcecreate="True" id="gender_female" model="partner.gender">
+            <field name="name">Female</field>
+        </record>
+    </data>
+</odoo>

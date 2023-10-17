@@ -1,17 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <templates id="template" xml:space="preserve">
-    <t t-name="PartnerDetailsEdits" t-inherit="point_of_sale.PartnerDetailsEdit" t-inherit-mode="extension" owl="1">
-       <xpath expr="//div[@class='partner-details-right']" position="inside">
-           <div class="partner-detail">
-                        <span class="label">Gender</span>
-                        <input class="detail gender" name="gender" type="selection" t-model="changes.gender" t-on-change="captureChange" placeholder ="gender" />
-                    </div>
-           <div class="partner-detail">
-                        <span class="label">ID</span>
-                        <input class="detail customerid" name="customerid"  t-model="changes.customerid" t-on-change="captureChange" placeholder ="customerid" />
-                    </div>
-
-       </xpath>
-
-    </t>
+	<t t-name="PartnerDetailsEdits" t-inherit="point_of_sale.PartnerDetailsEdit" t-inherit-mode="extension" owl="1">
+		<xpath expr="//div[@class='partner-details-right']" position="inside">
+			<div class="partner-detail">
+				<span class="label">Gender</span>
+				<select class="detail" name="gender_id" t-model="changes.gender_id" t-on-change="captureChange">
+					<option value="">None</option>
+					<t t-foreach="env.pos.genders" t-as="gender" t-key="gender.id">
+						<option t-att-value="gender.id">
+							<t t-esc="gender.name" />
+						</option>
+					</t>
+				</select>
+			</div>
+			<div class="partner-detail">
+				<span class="label">ID</span>
+				<input class="detail customerid" name="customerid" t-esc='props.partner.customerid' t-model="changes.customerid" t-on-change="captureChange" placeholder ="customerid"  />
+			</div>
+		</xpath>
+	</t>
 </templates>
